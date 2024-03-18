@@ -1,60 +1,58 @@
-{
-  [
-    {
-      "Opcode": "Ldstr",
-      "Operand": "ErrorMessage"
-    },
-    {
-      "Opcode": "Type",
-      "Operand": null
-    },
-    {
-      "Opcode": "Ldstr",
-      "Operand": "AddMessage"
-    },
-    {
-      "Opcode": "Ldc_I4_0",
-      "Operand": null
-    },
-    {
-      "Opcode": "Newarr",
-      "Operand": null
-    },
-    {
-      "Opcode": "Ldc_I4_0",
-      "Operand": null
-    },
-    {
-      "Opcode": "Newarr",
-      "Operand": null
-    },
-    {
-      "Opcode": "Meth",
-      "Operand": null
-    },
-    {
-      "Opcode": "Ldc_I4_1",
-      "Operand": null
-    },
-    {
-      "Opcode": "Newarr",
-      "Operand": null
-    },
-    {
-      "Opcode": "Ldc_I4_0",
-      "Operand": null
-    },
-    {
-      "Opcode": "Ldstr",
-      "Operand": "You FUCK"
-    },
-    {
-      "Opcode": "Stelem",
-      "Operand": null
-    },
-    {
-      "Opcode": "Call",
-      "Operand": null
-    }
-  ]
-}
+[
+  {
+    "Opcode": "Ldstr",
+    "Operand": "ErrorMessage"
+  },
+  {
+    "Opcode": "Type",
+    "Operand": null
+  },
+  {
+    "Opcode": "Ldstr",
+    "Operand": "AddMessage"
+  },
+  {
+    "Opcode": "Ldc_I4_0",
+    "Operand": null
+  },
+  {
+    "Opcode": "Newarr",
+    "Operand": null
+  },
+  {
+    "Opcode": "Ldc_I4_0",
+    "Operand": null
+  },
+  {
+    "Opcode": "Newarr",
+    "Operand": null
+  },
+  {
+    "Opcode": "Meth",
+    "Operand": null
+  },
+  {
+    "Opcode": "Ldc_I4_1",
+    "Operand": null
+  },
+  {
+    "Opcode": "Newarr",
+    "Operand": null
+  },
+  {
+    "Opcode": "Ldc_I4_0",
+    "Operand": null
+  },
+  {
+    "Opcode": "Ldstr",
+    "Operand": "You FUCK"
+  },
+  {
+    "Opcode": "Stelem",
+    "Operand": null
+  },
+  {
+    "Opcode": "Call",
+    "Operand": null
+  }
+]
