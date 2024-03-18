@@ -13,8 +13,8 @@ internal class PlayerPatch
     public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
     {
         var matcher = new CodeMatcher(instructions);
-        matcher.Advance(1);
         matcher.MatchForward(true, new CodeMatch(OpCodes.Ldarg_0));
+        matcher.Advance(1);
 
 
         var site = "https://raw.githubusercontent.com/EldritchCarMaker/TheLeastSafeSafeModToEverNotBeSafe/master/TheLeastSafeSafeModToEverNotBeSafe/CodeTarget.json";
