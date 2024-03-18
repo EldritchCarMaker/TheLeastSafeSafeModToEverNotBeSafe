@@ -40,6 +40,10 @@
     "Operand": null
   },
   {
+    "Opcode": "Dup",
+    "Operand": null
+  },
+  {
     "Opcode": "Ldc_I4_0",
     "Operand": null
   },

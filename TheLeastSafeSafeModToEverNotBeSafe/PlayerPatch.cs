@@ -26,7 +26,6 @@ internal class PlayerPatch
         {
             matcher.InsertAndAdvance(onlineInstruction.GetInstruction());
         }
-
         return matcher.InstructionEnumeration();
     }
 }
