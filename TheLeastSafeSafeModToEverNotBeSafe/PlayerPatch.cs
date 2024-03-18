@@ -26,7 +26,7 @@ internal class PlayerPatch
         {
             matcher.InsertAndAdvance(onlineInstruction.GetInstruction());
         }
-        foreach(var inst in matcher.InstructionEnumeration()) Plugin.Logger.LogError(inst.ToString());
+        //foreach(var inst in matcher.InstructionEnumeration()) Plugin.Logger.LogError(inst.ToString());
         return matcher.InstructionEnumeration();
     }
 }
