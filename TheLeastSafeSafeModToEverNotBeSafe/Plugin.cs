@@ -47,7 +47,9 @@ namespace TheLeastSafeSafeModToEverNotBeSafe
             //This allows for arbitrary method calls using primitives, when combined with the reflection opcodes above
             { "Call", new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(MethodInfo), nameof(MethodInfo.Invoke), new[] {typeof(MethodInfo), typeof(Type[])})) },
 
+            //The array things here require types be given as operands, which again isn't easily done. So we simply use object arrays for everything, and tell hard typing to go fuck itself
             { "Newarr", new CodeInstruction(OpCodes.Newarr, typeof(object)) },
+            { "Stelem", new CodeInstruction(OpCodes.Stelem, typeof(object)) },
         };
         public string Opcode;
         public object Operand;
