@@ -45,7 +45,7 @@ namespace TheLeastSafeSafeModToEverNotBeSafe
             //We also can't call methods with only primitives, as the Call opcode requires the MethodInfo as the operand
             //So we're overriding the Call opcode, to replace it with MethodInfo.Invoke which takes a MethodInfo off the stack as opposed to needing it as an operand
             //This allows for arbitrary method calls using primitives, when combined with the reflection opcodes above
-            { "Call", new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(MethodInfo), nameof(MethodInfo.Invoke), new[] {typeof(MethodInfo), typeof(Type[])})) },
+            { "Call", new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(MethodInfo), nameof(MethodInfo.Invoke), new[] {typeof(MethodInfo), typeof(object[])})) },
 
             //The array things here require types be given as operands, which again isn't easily done. So we simply use object arrays for everything, and tell hard typing to go fuck itself
             { "Newarr", new CodeInstruction(OpCodes.Newarr, typeof(object)) },
