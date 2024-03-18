@@ -44,10 +44,6 @@
     "Operand": "You FUCK"
   },
   {
-    "Opcode": "Stelem",
-    "Operand": 0
-  },
-  {
     "Opcode": "Call",
     "Operand": null
   }
