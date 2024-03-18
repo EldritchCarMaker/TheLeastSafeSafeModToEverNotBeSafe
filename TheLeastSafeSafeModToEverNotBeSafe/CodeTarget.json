@@ -12,19 +12,11 @@
     "Operand": "AddMessage"
   },
   {
-    "Opcode": "Ldc_I4_0",
+    "Opcode": "Ldnull",
     "Operand": null
   },
   {
-    "Opcode": "Newarr",
-    "Operand": null
-  },
-  {
-    "Opcode": "Ldc_I4_0",
-    "Operand": null
-  },
-  {
-    "Opcode": "Newarr",
+    "Opcode": "Ldnull",
     "Operand": null
   },
   {
