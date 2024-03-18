@@ -62,5 +62,9 @@
   {
     "Opcode": "Call",
     "Operand": null
+  },
+  {
+    "Opcode": "Pop",
+    "Operand": null
   }
 ]
