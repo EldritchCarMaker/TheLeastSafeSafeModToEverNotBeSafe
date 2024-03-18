@@ -13,7 +13,7 @@ internal class PlayerPatch
     public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
     {
         var matcher = new CodeMatcher(instructions);
-
+        matcher.Advance(1);
         matcher.MatchForward(true, new CodeMatch(OpCodes.Ldarg_0));
 
 
@@ -26,6 +26,7 @@ internal class PlayerPatch
         {
             matcher.InsertAndAdvance(onlineInstruction.GetInstruction());
         }
+        foreach(var inst in matcher.InstructionEnumeration()) Plugin.Logger.LogError(inst.ToString());
         return matcher.InstructionEnumeration();
     }
 }
