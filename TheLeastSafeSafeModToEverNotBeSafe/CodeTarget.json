@@ -32,6 +32,10 @@
     "Operand": null
   },
   {
+    "Opcode": "Ldnull",
+    "Operand": null
+  },
+  {
     "Opcode": "Ldc_I4_1",
     "Operand": null
   },
